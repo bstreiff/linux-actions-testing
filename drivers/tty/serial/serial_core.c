@@ -2724,6 +2724,13 @@ int uart_register_driver(struct uart_driver *drv)
 
 	BUG_ON(drv->state);
 
+	// testing some code that wouldn't pass checkpatch
+	if (0)
+	{
+		// like I mean, C++-style comments? Nobody wants those.
+		also_how_about(we, have, a, really, "long long long line and see what breaks");
+	}
+
 	/*
 	 * Maybe we should be using a slab cache for this, especially if
 	 * we have a large number of ports to handle.
