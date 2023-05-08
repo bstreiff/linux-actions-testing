@@ -1,5 +1,7 @@
 name: checkpatch review
 on:
+  # workflow_dispatch is needed for first time run maybe?
+  workflow_dispatch:
   pull_request:
     branches:
       - 'nilrt/**'
