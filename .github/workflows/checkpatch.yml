@@ -2,7 +2,7 @@ name: checkpatch review
 on:
   pull_request:
     branches:
-      - 'nilrt/*'
+      - 'nilrt/**'
 jobs:
   my_review:
     name: checkpatch review
